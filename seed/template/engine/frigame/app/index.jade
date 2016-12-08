@@ -1,0 +1,35 @@
+{%= getRoutes('components', '.jade', true, `include $TPL$`) %}
+doctype html
+html(lang='es')
+    head
+        meta(charset='utf-8')
+        title FriGame -- Breakouts
+        meta(content='' name='description')
+        link(href='favicon.ico' rel='shortcut icon')
+        link(href='assets/frigame/frigame.css' rel='stylesheet')
+        link(href='css/main.css' rel='stylesheet')
+
+    body
+        #playground
+            #welcomeScreen
+                #loadingBarB
+                    #loadingBar
+
+        +script-dist()
+            <!-- deps -->
+            script(src='assets/jquery-1.10.2.js')
+
+            script(src='assets/frigame/frigame.common.js')
+            script(src='assets/frigame/frigame.canvas.js')
+            script(src='assets/frigame/plugins/frigame.fx.js')
+            script(src='assets/frigame/plugins/frigame.sound.js')
+            script(src='assets/frigame/plugins/frigame.keytracker.js')
+            script(src='assets/frigame/plugins/frigame.mousetracker.js')
+
+            <!-- game -->
+            script(src='js/defines.js')
+            script(src='js/levels.js')
+            script(src='js/sprites.js')
+            script(src='js/ball.js')
+            script(src='js/scenes.js')
+            script(src='js/breakout.js')

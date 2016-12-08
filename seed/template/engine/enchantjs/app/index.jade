@@ -1,0 +1,24 @@
+{%= getRoutes('components', '.jade', true, `include $TPL$`) %}
+doctype html
+html(lang='es')
+    head
+        meta(charset='utf-8')
+        title enchant.js - Breakouts
+        meta(content='' name='description')
+        link(href='favicon.ico' rel='shortcut icon')
+        link(href='css/main.css' rel='stylesheet')
+
+    body
+        #enchant-stage
+
+        +script-dist()
+            script(src='assets/enchant/enchant.js')
+
+            script(src='js/game.js')
+            script(src='js/textScene.js')
+            script(src='js/mainScene.js')
+            script(src='js/bricks.js')
+            script(src='js/levels.js')
+            script(src='js/paddle.js')
+            script(src='js/powers.js')
+            script(src='js/ball.js')

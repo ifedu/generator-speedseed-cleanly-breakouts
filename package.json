@@ -1,0 +1,31 @@
+{
+    "description": "Template generator-speedseed-cleanly-breakouts for https://www.npmjs.com/package/generator-speedseed",
+    "homepage": "https://github.com/ifedu/generator-speedseed-cleanly-breakouts",
+    "main": "generators/app/index.js",
+    "name": "generator-speedseed-cleanly-breakouts",
+    "version": "0.1.0",
+
+    "keywords": [
+        "yeoman-generator"
+    ],
+
+    "author": {
+        "name": "Eduardo Pérez-Bermejo",
+        "email": "ifedu@outlook.com",
+        "url": "http://www.github.com/ifedu/generator-speedseed-cleanly-breakouts"
+    },
+
+    "dependencies": {
+        "speedseed": "^0.20.0",
+        "yeoman-generator": "^0.23.4"
+    },
+
+    "engines" : {
+        "node" : ">=6.0.0"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ifedu/generator-speedseed-cleanly-breakouts"
+    }
+}

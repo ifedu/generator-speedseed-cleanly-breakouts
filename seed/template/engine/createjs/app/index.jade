@@ -1,0 +1,21 @@
+{%= getRoutes('components', '.jade', true, `include $TPL$`) %}
+doctype html
+html.no-js
+    head
+        meta(charset='utf-8')
+        title create.js - Breakouts
+        meta(name='viewport' content='width=device-width')
+
+    body
+        div(align='center')
+            canvas#stage(width='320' height='416')
+            |<!-- <p><span id='fps'></span> FPS</p> -->
+
+        +script-dist()
+            //- Using the minimified and unified library
+             (EaselJS, TweenJS, SoundJS and PreloadJS are also available separately)
+            script(src='assets/lib/createjs-2014.12.12.min.js')
+            //- Specific classes from the game
+            {%= getRoutes('js/entities', '.js', false, `script(src='$TPL$')`, '            ') %}
+
+            script(src='js/game.js')

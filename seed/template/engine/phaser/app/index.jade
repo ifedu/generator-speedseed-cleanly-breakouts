@@ -1,0 +1,19 @@
+{%= getRoutes('components', '.jade', true, `include $TPL$`) %}
+doctype html
+html(lang='es')
+    head
+        meta(charset='utf-8')
+        title Phaser Basic Project Template
+        meta(content='' name='description')
+        link(href='favicon.ico' rel='shortcut icon')
+        link(href='css/main.css' rel='stylesheet')
+
+    body
+        #gameContainer
+
+        +script-dist()
+            script(src='assets/lib/phaser.js')
+
+            {%= getRoutes('js/src', '.js', false, `script(src='$TPL$')`, '            ') %}
+
+            script(src='js/main.js')

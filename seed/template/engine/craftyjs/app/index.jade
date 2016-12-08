@@ -1,0 +1,22 @@
+{%= getRoutes('components', '.jade', true, `include $TPL$`) %}
+doctype html
+html(lang='es')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')/
+        meta(name='apple-mobile-web-app-capable' content='yes')/
+
+        title Breakout - CraftyJS
+
+        link(href='favicon.ico' rel='shortcut icon')
+        link(href='css/main.css' rel='stylesheet')
+
+    body
+        +script-dist()
+            script(src='assets/crafty.js')
+            script(src='js/launch.js')
+
+            {%= getRoutes('js/components', '.js', false, `script(src='$TPL$')`, '            ') %}
+            {%= getRoutes('js/scenes', '.js', false, `script(src='$TPL$')`, '            ') %}
+
+        #cr-stage
