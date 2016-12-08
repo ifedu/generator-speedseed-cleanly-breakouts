@@ -1,7 +1,7 @@
 ### v.0.1.0
 
 ## Breakouts
-# Based on https://github.com/city41/breakouts
+- Based on https://github.com/city41/breakouts
 
 ### Requeriments
 - https://github.com/ifedu/generator-speedseed
