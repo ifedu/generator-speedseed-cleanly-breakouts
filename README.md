@@ -4,11 +4,11 @@
 - Based on https://github.com/city41/breakouts
 
 ### Requeriments
-- https://github.com/ifedu/generator-speedseed
+- [generator-speedseed](https://www.npmjs.com/package/generator-speedseed)
 - NodeJS >= 6.0.0
 
 ### Styleguide Cleanly
-- https://github.com/ifedu/cleanly-styleguide
+- [cleanly-styleguide](https://github.com/ifedu/cleanly-styleguide)
 
 ### Changelog
 - [English](https://github.com/ifedu/generator-speedseed-cleanly-breakouts/blob/master/docs/CHANGELOG/EN_US.md)
